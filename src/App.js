@@ -10,8 +10,8 @@ function App() {
   const [tours, setTours] = useState([])
 
   const removeTour = (id) => {
-    const newTours = tours.filter((tour) => tour.id !== id)
-    setTours(newTours)
+    const newTours = tours.filter((tour) => tour.id !== id);
+    setTours(newTours);
   }
 
   const fetchTours = async () => {
@@ -52,7 +52,7 @@ function App() {
     <main>
       <Tours tours={tours} removeTour={removeTour} />
     </main>
-  )
+  );
 }
 
 export default App
